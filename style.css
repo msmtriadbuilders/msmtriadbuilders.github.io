@@ -1,0 +1,797 @@
+/* Navbar Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    padding: 10px;
+    color: #333;
+}
+
+.navbar + .content {
+    /* Adjust margin-top as needed */
+    margin-top: -20px; /* Negative margin to overlap the navbar */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the content */
+    padding: 20px;
+    /* Add blur effect to the content to match the navbar's blur */
+    filter: blur(5px);
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Mobile view navbar */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; /* Initially hide navbar */
+    }
+
+    .navbar-collapse.show {
+        display: block; /* Show navbar when toggled */
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+.nav-link.active {
+    color: #007bff; /* Change this to your desired highlight color */
+    font-weight: bold; /* Optional: make the active link bold */
+}
+
+/* Placeholder card styling */
+.card {
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    color: #fff;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    overflow: hidden; /* Ensure child elements don't overflow */
+    transition: background 0.3s ease; /* Smooth transition for background change */
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Other styles remain unchanged... */
+
+
+/* Navbar Styles */
+
+.navbar-toggler {
+
+    border: none;
+
+}
+
+.navbar .nav-link.active {
+
+  font-weight: bold;
+
+  color: #007bff;
+
+  text-decoration: underline;
+
+}
+
+
+
+/* Mobile view navbar */
+
+@media (max-width: 768px) {
+
+  .navbar-collapse {
+
+      display: none; /* Initially hide navbar */
+
+  }
+
+  .navbar-collapse.show {
+
+      display: block; /* Show navbar when toggled */
+
+  }
+
+}
+
+
+
+.navbar-toggler-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .navbar-collapse {
+
+        text-align: center;
+
+    }
+
+    
+
+    .nav-item {
+
+        margin: 0.5rem 0;
+
+    }
+
+}
+
+.nav-link.active {
+
+    color: #007bff; /* Change this to your desired highlight color */
+
+    font-weight: bold; /* Optional: make the active link bold */
+
+}
+
+/* General Hero Section Styling */
+
+
+
+.hero {
+
+    position: relative;
+
+    height: 100vh; /* Full height for hero section */
+
+    color: #fff;
+
+}
+
+
+
+.carousel-item {
+
+    position: relative; /* Position relative to allow absolute positioning of children */
+
+    height: 100vh; /* Ensure the carousel item takes the full viewport height */
+
+}
+
+
+
+.carousel-caption {
+
+    display: flex; /* Use flexbox for alignment */
+
+    flex-direction: column; /* Stack children vertically */
+
+    justify-content: center; /* Center vertically */
+
+    align-items: center; /* Center horizontally */
+
+    height: 100%; /* Take full height of the carousel item */
+
+    text-align: center; /* Center text alignment */
+
+    padding: 0 20px; /* Optional: Add padding for responsiveness */
+
+}
+
+
+
+.hero-text {
+
+    font-size: 3rem; /* Responsive text size */
+
+    font-weight: bold;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for contrast */
+
+    color: white; /* Ensure text is visible against the background */
+
+}
+
+/* Carousel Controls */
+
+.carousel-control-prev-icon,
+
+.carousel-control-next-icon {
+
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for control icons */
+
+    border-radius: 50%; /* Round icons */
+
+    width: 40px; /* Set a fixed width */
+
+    height: 40px; /* Set a fixed height */
+
+    display: flex; /* Use flex to center the icon */
+
+    align-items: center; /* Center vertically */
+
+    justify-content: center; /* Center horizontally */
+
+}
+
+
+
+.carousel-control-prev,
+
+.carousel-control-next {
+
+    top: 50%; /* Center buttons vertically */
+
+    transform: translateY(-50%); /* Adjust for half the button's height */
+
+}
+
+/* Placeholder card styling */
+/* Service Section Styling */
+#services {
+    padding: 3rem 1rem;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Service Card Styling */
+.service-card {
+    position: relative;
+    border-radius: 10px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Always-visible header styling */
+.card-header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Overlay for Text Reveal */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 1rem;
+}
+
+.service-card:hover .card-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #f0f0f0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #services h2 {
+        font-size: 2rem;
+    }
+
+    .header-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+.card {
+
+    height: 250px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: #fff;
+
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+.card-body {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background-color: #333;
+
+    color: #fff;
+
+    padding: 1.5rem 0;
+
+    text-align: center;
+
+}
+
+
+
+footer p {
+
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+/* Floating contact button styling */
+
+.floating-contact {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    z-index: 1000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+}
+
+
+
+/* Style for the main contact button */
+.contact-toggle {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Set fixed size for round button */
+    height: 60px; /* Set fixed size for round button */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    
+    display: flex; /* Center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    overflow: hidden; /* Prevent icon overflow */
+    padding: 0; /* Remove padding for better icon fit */
+}
+
+/* Style for each contact option icon button */
+.contact-option {
+    display: flex; /* Center the icon */
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 60px; /* Same size as main button */
+    height: 60px; /* Same size as main button */
+    background-color: #fff; /* Background color for visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevent icon overflow */
+    padding: 0; /* Remove extra padding */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start below */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Adjust icon sizes for consistency */
+.contact-toggle img.icon, .contact-option img.contact-icon {
+    width: 75%; /* Scale the icon size relative to the button */
+    height: 75%; /* Scale the icon size relative to the button */
+}
+
+
+
+.contact-toggle:hover {
+
+    transform: scale(1.1); /* Scale effect on hover */
+
+}
+
+
+
+.contact-options {
+
+    display: flex; /* Use flexbox to align icons */
+
+    flex-direction: column; /* Stack vertically */
+
+    align-items: center; /* Center icons */
+
+    gap: 10px; /* Space between icons */
+
+    position: absolute; /* Position absolute to layer over the chat button */
+
+    bottom: 70px; /* Adjust to position above the chat button */
+
+    right: 0; /* Align to the right */
+
+}
+.contact-option {
+    display: flex; /* Display flex to center icon */
+    align-items: center;
+    justify-content: center; /* Center icons */
+    color: #333;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    background-color: #fff; /* Background color for visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start below */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-option img { /* If using images */
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+}
+
+
+
+.contact-option {
+
+    display: flex; /* Display flex to center icon */
+
+    align-items: center;
+
+    justify-content: center; /* Center icons */
+
+    color: #333;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    width: 60px; /* Same size as chat button */
+
+    height: 60px; /* Same size as chat button */
+
+    background-color: #fff; /* Background color for visibility */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    opacity: 0; /* Initially hidden */
+
+    transform: translateY(20px); /* Start below */
+
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
+}
+
+
+
+/* Show options with animation */
+
+.contact-option.show {
+
+    opacity: 1; /* Make visible */
+
+    transform: translateY(0); /* Slide up to position */
+
+}
+
+
+
+/* Animation delay for each icon */
+
+.contact-option.mail-option {
+
+    transition-delay: 0.1s; /* Delay for the Mail icon */
+
+}
+
+
+
+.contact-option.whatsapp-option {
+
+    transition-delay: 0.2s; /* Delay for the WhatsApp icon */
+    
+
+}
+
+/* About Us Section Styling */
+#about {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    backdrop-filter: blur(5px); /* Slight blur for frosted glass effect */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #333333; /* Darker text for readability */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#about .lead {
+    font-size: 1.2rem;
+    color: #555555;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    color: #666666; /* Slightly lighter color for normal text */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#about h4 {
+    font-size: 1.5rem;
+    color: #007bff; /* Accent color for section heading */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+#about ul li {
+    font-size: 1rem;
+    color: #444444;
+    padding: 0.5rem 0;
+}
+
+#about ul li strong {
+    color: #007bff; /* Same accent color for consistency */
+}
+
+#about .font-italic {
+    font-style: italic;
+    color: #007bff; /* Emphasize the tagline */
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about .lead {
+        font-size: 1.1rem;
+    }
+
+    #about p, #about ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Project Section */
+#projects {
+    padding: 3rem 1rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .card-img-top {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Overlay for Project Details */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    padding: 1rem;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none; /* Disable pointer events initially */
+    border-radius: 10px;
+}
+
+.card-overlay h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.card-overlay p {
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.project-card.clicked .card-overlay {
+    opacity: 1; /* Show overlay on click */
+    pointer-events: auto; /* Enable pointer events when visible */
+}
+
+.project-card.clicked .card-img-top {
+    filter: blur(4px); /* Add a blur effect to the image when overlay is shown */
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 4rem 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #007bff; /* Accent color for the heading */
+}
+
+#contact .lead {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#contact .map {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for map */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Address Styling */
+.contact-address p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: inline-block; /* Keeps content centered */
+    margin: 0 auto;
+}
+
+.contact-address p strong {
+    color: #007bff; /* Highlight color for important text */
+}
+
+#contact .map {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for map */
+    border-radius: 15px; /* Updated corner radius */
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
