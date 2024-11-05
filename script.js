@@ -2,13 +2,7 @@
 const contactToggle = document.querySelector('.contact-toggle');
 const contactOptions = document.querySelectorAll('.contact-option');
 
-contactToggle.addEventListener('mouseenter', () => {
-  contactOptions.forEach(item => item.classList.add('show'));
-});
 
-contactToggle.addEventListener('mouseleave', () => {
-  contactOptions.forEach(item => item.classList.remove('show'));
-});
 
 contactToggle.addEventListener('click', () => {
   contactOptions.forEach(item => item.classList.toggle('show'));
