@@ -51,7 +51,7 @@ document.querySelectorAll('.navbar .nav-link').forEach(anchor => {
     }
 
     // Close the navbar on mobile devices
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 995) {
       navbarCollapse.classList.remove('show');
       navbarToggler.classList.remove('collapsed');
       navbarToggler.setAttribute('aria-expanded', 'false');
@@ -63,7 +63,7 @@ document.querySelectorAll('.navbar .nav-link').forEach(anchor => {
 const homeLink = document.querySelector('.navbar .nav-link[href="#home"]');
 if (homeLink) {
   homeLink.addEventListener('click', () => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 995) {
       navbarCollapse.classList.remove('show');
       navbarToggler.classList.remove('collapsed');
       navbarToggler.setAttribute('aria-expanded', 'false');
@@ -91,3 +91,18 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTop = scrollTop;
 });
+// Optional: Adds ripple effect on the cards to mimic Material interaction feedback
+document.querySelectorAll('.contact-card, .map-card').forEach(card => {
+  card.addEventListener('mousedown', function (e) {
+      const ripple = document.createElement('span');
+      ripple.className = 'ripple';
+      ripple.style.left = `${e.clientX - this.offsetLeft}px`;
+      ripple.style.top = `${e.clientY - this.offsetTop}px`;
+      this.appendChild(ripple);
+
+      setTimeout(() => {
+          ripple.remove();
+      }, 500);
+  });
+});
+

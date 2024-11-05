@@ -23,7 +23,7 @@
 .navbar-brand{
     color: #181a1c;;
 }
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     .navbar-nav .nav-link {
       background: rgba(205, 180, 180, 0);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -47,7 +47,7 @@
 
 
 /* Mobile view navbar */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     .navbar-collapse {
         display: none; /* Initially hide navbar */
     }
@@ -61,7 +61,7 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     .navbar-collapse {
         text-align: center;
     }
@@ -114,7 +114,7 @@
 
 /* Mobile view navbar */
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
 
   .navbar-collapse {
 
@@ -140,7 +140,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
 
     .navbar-collapse {
 
@@ -329,7 +329,7 @@
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     #services h2 {
         font-size: 2rem;
     }
@@ -537,6 +537,62 @@ footer p {
     width: 24px; /* Adjust icon size */
     height: 24px; /* Adjust icon size */
 }
+/* Base Container */
+#contact .container {
+    max-width: 800px;
+}
+
+/* Card Styles */
+.contact-card, .map-card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Material-like shadow */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.contact-card:hover, .map-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Address Styling */
+.contact-card {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Contact Address Text */
+.contact-address {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Map Card Styling */
+.map-card {
+    overflow: hidden;
+    border-radius: 8px;
+}
+.map-card iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+/* Section Title Styling */
+#contact h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Lead Paragraph Styling */
+#contact .lead {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
 
 
 
@@ -662,7 +718,7 @@ footer p {
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     #about h2 {
         font-size: 2rem;
     }
@@ -802,3 +858,51 @@ footer p {
     overflow: hidden;
     margin-bottom: 1.5rem;
 }
+
+/* Stack Contact and Map Sections Vertically */
+#contact .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Make Phone Link Stand Out */
+.phone-link {
+    color: #007bff; /* Use a standout color */
+    font-weight: bold;
+    text-decoration: underline; /* Underline to indicate it's clickable */
+}
+.phone-link:hover {
+    color: #0056b3; /* Darken color on hover */
+}
+
+
+/* Ensure the map takes full width on smaller screens */
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.map-card iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* ß */
+
+/* Phone link styling */
+.phone-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
