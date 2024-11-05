@@ -28,6 +28,8 @@
       background: rgba(205, 180, 180, 0);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       border-radius: 25px;
+      font-weight: bold;
+      color: black;
     }
   }
 .navbar + .content {
