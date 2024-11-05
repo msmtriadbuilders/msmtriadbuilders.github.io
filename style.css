@@ -1,14 +1,35 @@
 /* Navbar Styles */
 .navbar {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(63, 53, 53, 0.3);
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 0px 0px 20px 20px;
     transition: background 0.3s ease;
-    padding: 10px;
+    padding: 15px;
     color: #333;
+    z-index: 999;
 }
-
+.nav-link {
+    font-weight: bold;
+    color: black;
+  }
+.carousel-inner {
+    margin-top: 60px; /* Adjust this value to match the navbar height */
+}
+.navbar-brand{
+    color: #181a1c;;
+}
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      background: rgba(205, 180, 180, 0);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+    }
+  }
 .navbar + .content {
     /* Adjust margin-top as needed */
     margin-top: -20px; /* Negative margin to overlap the navbar */
@@ -21,11 +42,7 @@
     border: none;
 }
 
-.navbar .nav-link.active {
-    font-weight: bold;
-    color: #007bff;
-    text-decoration: underline;
-}
+
 
 /* Mobile view navbar */
 @media (max-width: 768px) {
@@ -52,10 +69,6 @@
     }
 }
 
-.nav-link.active {
-    color: #007bff; /* Change this to your desired highlight color */
-    font-weight: bold; /* Optional: make the active link bold */
-}
 
 /* Placeholder card styling */
 .card {
@@ -89,13 +102,10 @@
 }
 
 .navbar .nav-link.active {
-
-  font-weight: bold;
-
-  color: #007bff;
-
-  text-decoration: underline;
-
+    font-weight: bold;
+    font-weight: bold;
+    color: #181a1c;
+    text-decoration: underline;
 }
 
 
@@ -146,17 +156,12 @@
 
 }
 
-.nav-link.active {
-
-    color: #007bff; /* Change this to your desired highlight color */
-
-    font-weight: bold; /* Optional: make the active link bold */
-
-}
-
 /* General Hero Section Styling */
 
-
+.carousel-inner {
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 50px; /* Adjust this value as needed */
+}
 
 .hero {
 

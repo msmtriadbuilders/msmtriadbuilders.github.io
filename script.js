@@ -2,8 +2,6 @@
 const contactToggle = document.querySelector('.contact-toggle');
 const contactOptions = document.querySelectorAll('.contact-option');
 
-
-
 contactToggle.addEventListener('click', () => {
   contactOptions.forEach(item => item.classList.toggle('show'));
 });
@@ -76,3 +74,20 @@ if (homeLink) {
 function toggleOverlay(card) {
     card.classList.toggle('clicked');
 }
+
+// Add functionality to hide/show navbar on scroll
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar'); // Ensure you select the correct navbar element
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // User is scrolling down
+        navbar.style.top = '-60px'; // Adjust this value based on your navbar height
+    } else {
+        // User is scrolling up
+        navbar.style.top = '0';
+    }
+    lastScrollTop = scrollTop;
+});
